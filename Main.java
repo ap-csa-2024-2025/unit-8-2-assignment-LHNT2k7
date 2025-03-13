@@ -4,7 +4,10 @@ public class Main
 {
   public static void main(String[] args)
   {
-    // TODO: Make an array of doubles, and test your sumArray method
+    double[] arr = new double[5];
+    String[] arrs = new String[6];
+
+
 
     // TODO: Make an array of Strings, and test your averageLength method
 
@@ -16,21 +19,46 @@ public class Main
 
   public static double sumArray(double[] arr)
   {
-    return 0.0;
+    double sum = 0.0;
+    for(int row = 0, row < arr.length; row++)
+    {
+       sun += arr[i];
+    }
+     return sum;
   }
 
   public static double averageLength(String[] arr)
   {
-    return 0.0;
+    double average = 0.0;
+    for(String n : arrs)
+    {
+      average += n.length();
+    }
+    return average/(arrs.length);
   }
 
   public static int arrayMax(int[] arr)
   {
-    return Integer.MIN_VALUE;
+    int maxIndex = 0
+    for (int n : arrss)
+    {
+      if (n.length() > maxIndex.length())
+      {
+        maxIndex = n.getIndex();
+      }
+    }
+    return maxIndex;
   }
 
-  public static boolean linearSearch(String[] arr)
+  public static boolean linearSearch(String[] arr,String target)
   {
+    for (i=0;i<arr.length;i++)
+    {
+      if(arr[i].equals(target))
+      {
+        return true;
+      }
+    }
     return false;
-  }
+  
 }
